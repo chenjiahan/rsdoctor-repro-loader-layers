@@ -28,7 +28,7 @@ export default defineConfig({
       },
       {
         test: /\.(jsx?|tsx?)$/,
-        layer: 'modern',
+        issuerLayer: 'modern',
         use: [
           {
             loader: 'builtin:swc-loader',
@@ -53,7 +53,7 @@ export default defineConfig({
       },
       {
         test: /\.(jsx?|tsx?)$/,
-        layer: 'legacy',
+        issuerLayer: 'legacy',
         use: [
           {
             loader: './legacy-loader.js',
